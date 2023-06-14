@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/contacto.css">
-    <LINk rel="stylesheet" href="CSS/estilos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300&display=swap" rel="stylesheet">
-<link rel="shortcut icon" href="ICO/favicon_io/favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="boxicon/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css">
-    <title>La Guitarra de Lolo</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="ICO/favicon_io/logo_TC-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="boxicon/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css">
+    <title>Turismo</title>
 </head>
+
 <body>
     <header>
-        <div class="">
+        <nav>
+            <button class="nav-boton" onclick="accion()">Menú</button>
+            <i class='bx bx-trip bx-burst'></i>
+            <a class="nav-enlace desaparece" href="index.html">Inicio</a>
+            <a class="nav-enlace desaparece" href="Contacto.html">Contacto</a>
+            <a class="nav-enlace desaparece" href="Nosotros.html">Nosotros</a>
+            <a class="nav-enlace desaparece" href="Servicios.html">Servicios</a>
+        </nav>
+
+        <div class="img-banner">
             <!--clase contenedora-->
             <div class="container">
                 <!--Nombre de la empresa o proyecto-->
-                
+                <h1><span>TURISMO CORRIENTES</span></h1>
                 <!--clase para centrar el texto-->
-                <span class="cen"></span>
-                <!--clase para el boton contacto-->
-               
-        
+                <span class="cen"></span>                
             </div>
         </div>
-    <nav>
-        <button class="nav-boton" onclick="accion()">Menú</button>
-        <i class='bx bx-wink-tongue'></i>
-        <a class="nav-enlace desaparece" href="index.html">Inicio</a>
-        <a class="nav-enlace desaparece" href="Contacto.html">Contacto</a>
-        <a class="nav-enlace desaparece" href="Nosotros.html">Nosotros</a>
-    </nav>
-    <h1 class="center">La Guitarra de Lolo</h1>
+
+    </header>
+
     <!--Formulario -->
     <form action="" method="post">
-        <h2>Contacto</h2>
+        <h2>Contáctanos</h2>
         <input type="text" placeholname="Nombre" der="Nombre">
-        <input type="text" name="E-mail" placeholder="e-mail">
-        <input type="text" name="Telefono" placeholder="Telefono">
+        <input type="text" name="E-mail" placeholder="E-mail">
+        <input type="text" name="Teléfono" placeholder="Teléfono">
         <textarea name="Mesaje" placeholder="Dejanos tu mensaje"></textarea>
         <input type="button" value="Enviar" id="boton">
     </form>
@@ -52,5 +55,42 @@
             }
         }
     </script>
+      <!--Sección pie de página-->
+      <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="IMG/logo_TC-removebg-preview.png" alt="Logo Turismo Corrientes">
+                    </a>
+                </figure>
+            </div>
+            
+            <div class="box">
+                <h2>Seguinos en redes sociales</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.instagram.com/"> <i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="grupo-2">
+            <small>&copy; 2023 <b>Turismo Corrientes</b> Todos los Derechos Reservados.</small>
+
+        </div>
+    </footer>
+    <!--fin pie de página-->
+    <script>
+        function accion() {
+            var ancla = document.getElementsByClassName('nav-enlace');
+            for (var i = 0; i < ancla.length; i++) {
+                ancla[i].classList.toggle('desaparece');
+            }
+        }
+    </script>
+
 </body>
 </html>

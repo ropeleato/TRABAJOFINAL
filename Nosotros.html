@@ -5,60 +5,131 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/ntros.css">
-    <title>La GUitarra de Lolo</title>
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="ICO/favicon_io/logo_TC-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="boxicon/boxicons-2.1.4/boxicons-2.1.4/css/boxicons.css">
+    <title>Turismo</title>
 </head>
 
 <body>
     <header>
-        <NAV>
-            <a href="index.html">Inicio</a>
-            <a href="Contacto.html">Contacto</a>
-            <a href="Nosotros.html">Nosotros</a>
-        </NAV>
-        <h1>Contactanos</h1>
-    </header>
-    <div class="presentacion">
-        <div class="img-presentacion">
-            <img src="IMG/MIRANDA.png" alt="presentacion">
-        </div>
-        <div class="presentacion-info">
-            <div class="presentacion-texto">
-                <h3>Quienes somos</h3>
-                <h4>Sobre Nosotros</h4>
-                <p> Un club de fanes o club de fans es un grupo de personas que se dedica a un famoso, grupo musical,
-                    personaje famoso, futbolista, etc. La mayoría de clubs de fanes están a cargo de uno de estos, que
-                    dedica su tiempo y recursos a apoyarlos.</p>
-            </div>
-            <div class="presentacion-btn">
-                <a href="index.html">+Info</a>
-            </div>
-        </div>
-    </div>
-    <h2>Miranda</h2>
-    <h3>Grupo musical pop</h3>
-    <img src="IMG/MIRANDA1.jpg" alt="600">
-    </menu><br>
-    <div>
-        <h1 class="menu">Discografía</h1>
-        <div class="contenedor">
-            <div class="tarjeta">
-                <img class="img-tarjeta" src="IMG/disco.jpg" alt="Sociales">
-                <a class="boton-tarjetas" href="#">Sociales y Familiares</a>
-                <p class="parrafo-tarjeta">La banda ha cautivado al público gracias a su inagotable producción de hits y
-                    melodías reconocidas en toda Latinoamérica con siete premios MTV, cuatro premios Gardel, dos
-                    Gaviotas de Plata y cuatro antorchas en el Festival Viña del Mar y vendido más de 500.000 discos.
-                </p>
-            </div>
-            <div class="tarjeta">
-                <img class="img-tarjeta" src="IMG/discodisco.jpg" alt="Empresariales">
-                <a class="boton-tarjetas" href="#">Empresariales</a>
-                <p class="parrafo-tarjeta">Brindamos los mejores servicios para los eventos empresariales</p>
-            </div>
-        </div>
-    </div>
-    <footer>Derechos Reservados</footer>
+        <nav>
+            <button class="nav-boton" onclick="accion()">Menú</button>
+            <i class='bx bx-trip bx-burst'></i>
+            <a class="nav-enlace desaparece" href="index.html">Inicio</a>
+            <a class="nav-enlace desaparece" href="Contacto.html">Contacto</a>
+            <a class="nav-enlace desaparece" href="Nosotros.html">Nosotros</a>
+            <a class="nav-enlace desaparece" href="Servicios.html">Servicios</a>
+        </nav>
 
+        <div class="img-banner">
+            <!--clase contenedora-->
+            <div class="container">
+                <!--Nombre de la empresa o proyecto-->
+                <h1><span>TURISMO CORRIENTES</span></h1>
+                <!--clase para centrar el texto-->
+                <span class="cen"></span>
+                <!--clase para el boton contacto-->
+
+            </div>
+        </div>
+
+    </header>
+    <div class="linea">
+        <div>
+            <div class="presentacion">
+                <div class="img-presentacion">
+                    <img src="IMG/logo_TC-removebg-preview.png" alt="presentacion">
+                </div>
+                <div class="presentacion-info">
+                    <div class="presentacion-texto">
+                        <h3>Sobre Nosotros</h3>
+                        <p> Nuestra empresa, Turismo Correntino., está formada por profesionales del área de la
+                            tecnología, el
+                            turismo y el marketing que desde 1998 combinamos el mundo de Internet con el sector de
+                            Viajes y Turismo.</p>
+                    </div>
+                    <div class="presentacion-btn">
+                        <a href="index.html">+Info</a>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Costanera Sur</h3>
+            <img src="IMG/vista desde el pte.jpg" alt="600">
+            </menu><br>
+            <div>
+                <h1 class="menu">EVENTOS</h1>
+                <div class="contenedor">
+                    <div class="tarjeta">
+                        <img class="img-tarjeta" src="IMG/Peregrinacion_ItatiCtes-696x473.jpg" alt="Excursiones">
+                        <a class="boton-tarjetas" href="#">FIestas Patronales</a>
+                        <p class="parrafo-tarjeta">El turismo religioso en Corrientes se engalana en compartir a su
+                            Santa Patrona, la Virgen de Itatí, protectora de los correntinos.
+
+                        </p>
+                    </div>
+                    <div class="tarjeta">
+                        <img class="img-tarjeta" src="IMG/museos.jpg" alt="Visitas guiadas">
+                        <a class="boton-tarjetas" href="#">Museos</a>
+                        <p class="parrafo-tarjeta">Infinidad de museos y salas de exposición, donde afloran expresiones
+                            artísticas, historias y diversas culturas.
+                    </div>
+                    <div class="tarjeta">
+                        <img class="img-tarjeta" src="IMG/carnaval.jpg" alt="Visitas guiadas">
+                        <a class="boton-tarjetas" href="#">Fiesta del Carnaval</a>
+                        <p class="parrafo-tarjeta">El Carnaval se traduce a un espectáculo de lujo y calidad humana que
+                            invita al turista a conocer esta fiesta que brinda alegría y diversión todas las noches.
+                    </div>
+                    <div class="tarjeta">
+                        <img class="img-tarjeta" src="IMG/FiestaNacionaChamame-456-696x495.jpg" alt="Visitas guiadas">
+                        <a class="boton-tarjetas" href="#">Fiesta del Chamamé</a>
+                        <p class="parrafo-tarjeta">En el mes de enero se realiza la fiesta Nacional y del Mercosur
+                            del chamamé. El género sintetiza en sus melodías, su poesía y su danza el verdadero núcleo
+                            de la cultura correntina.
+                    </div>
+                </div>
+            </div>
+            <!--Sección pie de página-->
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="box">
+                        <figure>
+                            <a href="#">
+                                <img src="IMG/logo_TC-removebg-preview.png" alt="Logo Turismo Corrientes">
+                            </a>
+                        </figure>
+                    </div>
+
+                    <div class="box">
+                        <h2>Seguinos en redes sociales</h2>
+                        <div class="red-social">
+                            <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="https://www.instagram.com/"> <i class='bx bxl-instagram-alt'></i></a>
+                            <a href="https://twitter.com/"><i class='bx bxl-twitter'></i></a>
+                            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>Turismo Corrientes</b> Todos los Derechos Reservados.</small>
+
+                </div>
+            </footer>
+            <!--fin pie de página-->
+            <script>
+                function accion() {
+                    var ancla = document.getElementsByClassName('nav-enlace');
+                    for (var i = 0; i < ancla.length; i++) {
+                        ancla[i].classList.toggle('desaparece');
+                    }
+                }
+            </script>
 </body>
 
 </html>
